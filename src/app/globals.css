@@ -1,0 +1,57 @@
+/* Tailwind Directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Google Fonts Import */
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Global Styles */
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Custom Marquee Animation */
+@layer utilities {
+  /* Keyframes for Marquee Effect */
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  /* Animation Class */
+  .animate-marquee {
+    animation: marquee 20s linear infinite;
+  }
+
+  /* Pause Animation When Any Child is Hovered */
+  .group:hover .animate-marquee {
+    animation-play-state: paused;
+  }
+
+  /* Custom Flip Card Utilities */
+
+  /* Perspective */
+  .perspective {
+    perspective: 1000px;
+  }
+
+  /* Transform Style */
+  .transform-style-3d {
+    transform-style: preserve-3d;
+  }
+
+  /* Backface Visibility Hidden */
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
+
+  /* Rotate Y 180 Degrees */
+  .rotate-y-180 {
+    transform: rotateY(180deg);
+  }
+}
