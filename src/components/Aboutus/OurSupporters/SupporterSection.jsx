@@ -1,4 +1,4 @@
-"use client";
+'use client'
 import React from "react";
 import SupporterCard from "./SupporterCard/Card"; // Adjust path as needed
 

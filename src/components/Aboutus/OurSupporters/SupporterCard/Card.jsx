@@ -1,10 +1,16 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
 const SupporterCard = ({ imageSrc, altText, link }) => {
+  const [imgSrc, setImgSrc] = useState(imageSrc);
+
+  const handleImageError = () => {
+    setImgSrc("/images/default.png"); // Ensure this path is correct
+  };
+
   return (
     <motion.div
       className="flex-shrink-0 w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 lg:w-64 lg:h-64 flex items-center justify-center transition-transform duration-300 cursor-pointer focus:outline-none rounded-full bg-transparent"
@@ -24,16 +30,14 @@ const SupporterCard = ({ imageSrc, altText, link }) => {
         }
       }}
     >
-      <Image
-        src={imageSrc}
+      {/* Use the standard <img> tag for error handling */}
+      <img
+        src={imgSrc}
         alt={altText}
         width={256}
         height={256}
         className="object-contain"
-        onError={(e) => {
-          e.target.onerror = null;
-          e.target.src = "/images/default.png";
-        }}
+        onError={handleImageError}
       />
     </motion.div>
   );
