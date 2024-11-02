@@ -5,6 +5,7 @@ const page = () => {
   return (
     <div className="w-screen h-screen overflow-x-hidden">
       <Home />
+      </hi>
     </div>
   );
 };
