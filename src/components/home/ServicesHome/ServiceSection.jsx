@@ -95,13 +95,13 @@ const ServiceSection = () => {
         {/* Cards Section */}
         <div className="rightside w-full md:w-1/2 flex flex-wrap justify-center items-center gap-5 p-5 ">
           <ServiceCard
-            image="/images/services img/webdev.png"
+            image="/images/servicesimg/webdev.png"
             imageHover="/images/services img/webwhite.png"
             title="Web Development"
             description="At Code4Bharat, we deliver tailored web development services, including custom websites, e-commerce platforms, and web applications."
           />
           <ServiceCard
-            image="/images/services img/mobile.png"
+            image="/images/servicesimg/mobile.png"
             imageHover="/images/services img/mobilewhite.png"
             title="Mobile Development"
             description="We provide custom mobile app development services that bring your vision to life across iOS and Android platforms."
@@ -113,25 +113,25 @@ const ServiceSection = () => {
       <div className="w-full flex justify-center items-center p-5 md:p-10 ">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 text-[#112D4E]">
           <ServiceCard
-            image="/images/services img/it.png"
+            image="/images/servicesimg/it.png"
             imageHover="/images/services img/itwhite.png"
             title="IT Consulting"
             description="We help businesses navigate digital transformation with tailored solutions in technology strategy, cloud migration, and system integration."
           />
           <ServiceCard
-            image="/images/services img/ecommerce.png"
+            image="/images/servicesimg/ecommerce.png"
             imageHover="/images/services img/ecommercewhite.png"
             title="E-Commerce Solutions"
             description="Code4Bharat provides complete e-commerce solutions, including storefront setup and payment integration, to create secure and scalable platforms that drive business growth."
           />
           <ServiceCard
-            image="/images/services img/ofshore.png"
+            image="/images/servicesimg/ofshore.png"
             imageHover="/images/services img/ofshorewhite.png"
             title="Offshore Development"
             description="We provide high-quality, cost-effective software solutions for international clients, including dedicated teams and ongoing support."
           />
           <ServiceCard
-            image="/images/services img/ofshore.png"
+            image="/images/servicesimg/ofshore.png"
             imageHover="/images/services img/ofshorewhite.png"
             title="Digital Marketing Solutions"
             description="Code4Bharat offers comprehensive digital marketing services such as SEO, social media management, and content marketing."
