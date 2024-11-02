@@ -1,4 +1,3 @@
-"use client"
 import HeroSection from "@/components/Aboutus/AboutCard/HeroSection";
 import Navbar from "@/components/layouts/navbar/Navbar";
 import React from "react";
