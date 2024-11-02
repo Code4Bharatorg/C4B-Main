@@ -19,9 +19,9 @@ const Footer = () => {
             />
           </div>
           <p className="text-[4vw] md:text-[1vw] font-medium text-left mb-2 ml-12 md:text-left">
-            Code4Bharat is at the forefront of providing world-class <br />  IT
-            solutions, helping businesses globally leverage technology <br />for
-            growth and success.
+            Code4Bharat is at the forefront of providing world-class <br /> IT
+            solutions, helping businesses globally leverage technology <br />
+            for growth and success.
           </p>
         </div>
 
@@ -29,17 +29,22 @@ const Footer = () => {
         <div className="w-full md:w-[20%] h-auto mb-8 md:mb-0 flex flex-col items-start">
           <h1 className="text-[5vw] md:text-[1vw] font-bold">Featured Links</h1>
           <div className="mt-2 space-y-2">
-            {["Home", "About Us", "Our Services", "Our Clients", "Our Approach"].map(
-              (link, index) => (
+            {[
+              { name: "Home", path: "/" },
+              { name: "About Us", path: "/aboutus" },
+              { name: "Our Services", path: "/services" },
+              { name: "Our Clients", path: "/clients" },
+              { name: "Our Approach", path: "/approach" },
+            ].map((link, index) => (
+              <Link key={index} href={link.path}>
                 <motion.h5
-                  key={index}
                   className="text-[4vw] md:text-[1vw] hover:text-[#1976D2] cursor-pointer transition-colors duration-300"
                   whileHover={{ scale: 1.05 }} // Slightly scale up on hover
                 >
-                  {link}
+                  {link.name}
                 </motion.h5>
-              )
-            )}
+              </Link>
+            ))}
           </div>
         </div>
 
@@ -47,17 +52,18 @@ const Footer = () => {
         <div className="w-full md:w-[20%] h-auto mb-8 md:mb-0 flex flex-col items-start">
           <h1 className="text-[5vw] md:text-[1vw] font-bold">Legal</h1>
           <div className="mt-2 space-y-2">
-            {["Terms & Conditions", "Privacy & Security", "Contact"].map(
-              (link, index) => (
-                <motion.h5
-                  key={index}
-                  className="text-[4vw] md:text-[1vw] hover:text-[#1976D2] cursor-pointer transition-colors duration-300"
-                  whileHover={{ scale: 1.05 }} // Slightly scale up on hover
-                >
-                  {link}
-                </motion.h5>
-              )
-            )}
+            {[
+              { name: "Terms & Conditions" },
+              { name: "Privacy & Security" },
+              { name: "Contact" },
+            ].map((item, index) => (
+              <div
+                key={index}
+                className="text-[4vw] md:text-[1vw] hover:text-[#1976D2] cursor-pointer transition-colors duration-300"
+              >
+                {item.name}
+              </div>
+            ))}
           </div>
         </div>
 
@@ -65,14 +71,13 @@ const Footer = () => {
         <div className="w-full md:w-[20%] h-auto flex flex-col items-start">
           <h1 className="text-[5vw] md:text-[1vw] font-bold">Resources</h1>
           <div className="mt-2 space-y-2">
-            {["Blog", "Help Center"].map((link, index) => (
-              <motion.h5
+            {[{ name: "Blog" }, { name: "Help Center" }].map((item, index) => (
+              <div
                 key={index}
                 className="text-[4vw] md:text-[1vw] hover:text-[#1976D2] cursor-pointer transition-colors duration-300"
-                whileHover={{ scale: 1.05 }} // Slightly scale up on hover
               >
-                {link}
-              </motion.h5>
+                {item.name}
+              </div>
             ))}
           </div>
         </div>
