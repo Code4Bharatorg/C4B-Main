@@ -112,7 +112,7 @@ const ValueCard = ({ value }) => {
 
   return (
     <motion.div
-      className="w-[90%] md:w-[20%] h-[300px] md:h-[400px] bg-white rounded-2xl p-5 flex items-center justify-center shadow-lg cursor-pointer"
+      className="w-[90%] md:w-[25%] h-[400px] md:h-[400px] bg-white rounded-2xl p-5 flex items-center justify-center shadow-lg cursor-pointer mt-8"
       variants={cardVariants}
       whileHover={{ scale: 1.05 }} // Slight hover effect on card
       onClick={() => setIsFlipped(!isFlipped)}
@@ -128,7 +128,7 @@ const ValueCard = ({ value }) => {
       >
         {/* Front Side */}
         <div
-          className="absolute w-full h-full flex flex-col items-center justify-between bg-white rounded-2xl p-5"
+          className="absolute w-full h-full flex flex-col items-center justify-between bg-white rounded-2xl gap-8 p-5"
           style={{
             backfaceVisibility: "hidden",
           }}
@@ -143,16 +143,16 @@ const ValueCard = ({ value }) => {
             </div>
           </div>
           <div className="w-full h-[50%] flex items-center justify-center flex-col text-center gap-2 md:gap-5 px-2">
-            <span className="text-lg md:text-base font-bold font-sans">
+            <span className="text-lg md:text-xl font-bold font-sans">
               {value.title}
             </span>
-            <p className="text-sm md:text-xs font-medium">
+            <p className="text-sm md:text-md font-medium">
               {value.description}
             </p>
           </div>
           <div className="w-full h-[20%] flex items-center justify-center mt-2 md:mt-5">
             <motion.span
-              className="flex items-center gap-2 text-sm md:text-xs font-semibold text-blue-600"
+              className="flex items-center gap-2 text-sm md:text-md font-semibold text-blue-600"
               whileHover={{ x: 5 }} // Move text slightly on hover
               transition={{ type: "spring", stiffness: 300 }}
               onClick={(e) => {
@@ -218,7 +218,7 @@ const ValuesSection = () => {
         viewport={{ once: false, amount: 0.3 }} // Controls the re-trigger and when it starts
       >
         <motion.div
-          className="w-[30%] md:w-[10%] h-auto md:h-[20%] rounded-full flex items-center justify-center bg-[#112D4E]"
+          className="w-[35%] md:w-[15%] h-auto md:h-[25%] rounded-full flex items-center justify-center bg-[#112D4E]"
           variants={textVariants} // Apply animation to the text header
         >
           <h1 className="font-semibold text-xl md:text-lg text-white">
