@@ -9,7 +9,11 @@ const AboutusInfo = () => {
   // Animation variants for text and button
   const minimalVariants = {
     hidden: { opacity: 0, y: 30 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.5, ease: "easeOut" },
+    },
   };
 
   const staggerContainer = {
@@ -22,7 +26,11 @@ const AboutusInfo = () => {
 
   const buttonVariants = {
     hidden: { opacity: 0, scale: 0.8 },
-    visible: { opacity: 1, scale: 1, transition: { duration: 0.4, ease: "easeOut" } },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: { duration: 0.4, ease: "easeOut" },
+    },
   };
 
   return (
@@ -67,8 +75,8 @@ const AboutusInfo = () => {
               className="text-[4vw] md:text-[1vw] font-semibold block mb-5"
               variants={minimalVariants}
             >
-              Code4Bharat is a leading IT solutions provider, specializing in: Cutting-edge web
-              development
+              Code4Bharat is a leading IT solutions provider, specializing in:
+              Cutting-edge web development
             </motion.span>
 
             <motion.div className="w-full h-auto" variants={staggerContainer}>
@@ -120,10 +128,13 @@ const AboutusInfo = () => {
           </motion.div>
         ) : (
           <div className="w-[80%] ml-8 md:w-[100%] h-[25vh] md:h-[50vh] flex items-center justify-center mr-8">
-            <video
-              src="/images/video.mp4" // Ensure the path is correct, e.g., /video.mp4
-              controls
-              autoPlay
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://drive.google.com/file/d/1JGxiJ1lhe5tgBIBFLg6heIQxkmHKSFNt/preview"
+              frameBorder="0"
+              allow="autoplay"
+              title="About Code4Bharat Video"
               className="w-full h-full rounded-lg"
             />
           </div>
