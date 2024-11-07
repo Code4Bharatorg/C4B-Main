@@ -59,8 +59,7 @@ const Footer = () => {
           <h1 className="text-[5vw] md:text-[1vw] font-bold">Legal</h1>
           <div className="mt-2 space-y-2">
             {[
-              { name: "Terms & Conditions", path: "/termsandconditions" },
-              { name: "Privacy & Security", path: "/privacyandsecurity" },
+              { name: "Terms & Conditions", path: "/termsandcondition" },
               { name: "Contact", path: "/contactus" },
             ].map((item, index) => (
               <Link key={index} href={item.path}>
@@ -99,10 +98,7 @@ const Footer = () => {
             </div>
             <div className="text-[4vw] md:text-[1vw]">
               <span className="font-medium">Office:</span>
-              <p>
-                1A & 2, Lower Ground Floor, Building No. 3 White House, New
-                Buddha Colony, Kurla (West)
-              </p>
+               Off BKC, Mumbai, India 400070.
             </div>
           </div>
         </div>
