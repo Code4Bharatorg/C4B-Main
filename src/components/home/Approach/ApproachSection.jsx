@@ -32,7 +32,7 @@ const steps = [
 
 const ApproachSection = () => {
   return (
-    <section className="w-full h-auto mt-10 flex flex-col lg:flex-row bg-[#DBE2EF]">
+    <section className="w-full h-auto mt-10 flex flex-col lg:flex-row bg-gradient-to-r from-[#122932] to-[#1F3A61] text-white">
       {/* Left Section */}
       <motion.div
         className="w-full lg:w-[60%] h-auto lg:h-full px-5 md:px-24 py-10"
@@ -48,7 +48,7 @@ const ApproachSection = () => {
           whileInView={{ opacity: 1, y: 0 }} // Animate when in view
           transition={{ duration: 0.6, ease: "easeInOut" }}
         >
-          <span className="text-[6vw] md:text-[1.5vw] font-semibold text-[#576066]">
+          <span className="text-[6vw] md:text-[1.5vw] font-semibold text-[#A4D7E3]">
             How it Works?
           </span>
           <h1 className="text-[8vw] md:text-[2.5vw] w-full font-sans font-bold leading-tight md:leading-none">
@@ -72,14 +72,14 @@ const ApproachSection = () => {
               transition={{ duration: 0.5, ease: "easeInOut" }}
             >
               <div className="w-[20%] md:w-[15%] flex items-center justify-center mb-5 md:mb-0">
-                <div className="w-12 h-12 md:w-16 md:h-16 rounded-full flex items-center justify-center border-4 border-[#122932]">
+                <div className="w-12 h-12 md:w-16 md:h-16 rounded-full flex items-center justify-center border-4 border-[#A4D7E3]">
                   <h1 className="text-[4vw] md:text-[1.5vw] font-sans font-extrabold">
                     {step.id < 10 ? `0${step.id}` : step.id}
                   </h1>
                 </div>
               </div>
               <div className="w-full md:w-[75%] flex flex-col justify-center text-center md:text-left">
-                <span className="text-[4vw] md:text-[1.2vw] font-semibold text-black">
+                <span className="text-[4vw] md:text-[1.2vw] font-semibold text-[#A4D7E3]">
                   {step.title}
                 </span>
                 <h4 className="text-[3.5vw] md:text-[1vw]">{step.description}</h4>
@@ -99,7 +99,7 @@ const ApproachSection = () => {
               alt="Approach"
               width={800}
               height={400}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover rounded-xl shadow-lg"
             />
           </motion.div>
         </motion.div>
@@ -120,14 +120,14 @@ const ApproachSection = () => {
               transition={{ duration: 0.5, ease: "easeInOut" }}
             >
               <div className="w-[20%] md:w-[15%] flex items-center justify-center mb-5 md:mb-0">
-                <div className="w-12 h-12 md:w-16 md:h-16 rounded-full flex items-center justify-center border-4 border-[#122932]">
+                <div className="w-12 h-12 md:w-16 md:h-16 rounded-full flex items-center justify-center border-4 border-[#A4D7E3]">
                   <h1 className="text-[4vw] md:text-[1.5vw] font-sans font-extrabold">
                     {step.id < 10 ? `0${step.id}` : step.id}
                   </h1>
                 </div>
               </div>
               <div className="w-full md:w-[75%] flex flex-col justify-center text-center md:text-left">
-                <span className="text-[4vw] md:text-[1.2vw] font-semibold text-black">
+                <span className="text-[4vw] md:text-[1.2vw] font-semibold text-[#A4D7E3]">
                   {step.title}
                 </span>
                 <h4 className="text-[3.5vw] md:text-[1vw]">{step.description}</h4>
@@ -151,7 +151,7 @@ const ApproachSection = () => {
             alt="Approach"
             width={800}
             height={400}
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover rounded-xl shadow-lg"
           />
         </div>
       </motion.div>
@@ -160,3 +160,4 @@ const ApproachSection = () => {
 };
 
 export default ApproachSection;
+  
