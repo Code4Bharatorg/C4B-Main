@@ -57,12 +57,12 @@ const ApproachHeroSection = () => {
             className="w-full text-center md:text-left"
             variants={textVariants}
           >
-            <motion.button
+            {/* <motion.button
               whileHover={{ scale: 1.03 }} // Slight hover effect for the button
               className="px-6 py-3 text-[4vw] md:text-[1vw] font-medium bg-white text-black rounded-md"
             >
               Learn More About Our Approach
-            </motion.button>
+            </motion.button> */}
           </motion.div>
         </motion.div>
 

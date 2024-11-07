@@ -48,7 +48,9 @@ const Navbar = () => {
     },
   };
 
+  // Menu items including "Home"
   const menuItems = [
+    { name: "Home", path: "/" }, // New Home link
     { name: "About Us", path: convertToPath("About Us") },
     { name: "Services", path: convertToPath("Services") },
     { name: "Clients", path: convertToPath("Clients") },
@@ -147,7 +149,7 @@ const Navbar = () => {
         animate="visible"
         variants={navVariants}
       >
-        <Link href={menuItems[4].path} onClick={handleLinkClick}>
+        <Link href={menuItems[5].path} onClick={handleLinkClick}>
           <motion.button
             className="btn text-[1vw] font-medium border-[2.5px] border-[#112D4E] px-10 py-2 rounded-md transition-all duration-300 ease-in-out"
             whileHover={{

@@ -2,6 +2,7 @@
 import React from "react";
 import Image from "next/image"; // Using Next.js Image component for optimization
 import { motion } from "framer-motion"; // Importing Framer Motion for animations
+import Link from "next/link";
 
 // Animation variants for text and image
 const textVariants = {
@@ -54,14 +55,16 @@ const ServiceHeroSection = () => {
               we help businesses succeed in the digital world.
             </motion.p>
           </div>
-          <motion.div
+          {/* <motion.div
             className="w-full text-center md:text-left"
             variants={textVariants}
           >
+          <Link href="/services" > 
             <button className="px-6 py-3 text-[4vw] md:text-[1vw] font-medium bg-white text-black rounded-md">
               Learn More About Our Services
             </button>
-          </motion.div>
+          </Link>
+          </motion.div> */}
         </motion.div>
 
         {/* Right Section (Image) */}

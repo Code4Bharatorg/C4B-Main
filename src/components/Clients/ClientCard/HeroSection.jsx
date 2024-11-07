@@ -2,7 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion"; // Importing Framer Motion for animations
 import Image from "next/image"; // Using Next.js Image component for optimization
-
+import Link from "next/link";
 const ClientsHeroSection = () => {
   // Animation variants for text and image
   const textVariants = {
@@ -41,7 +41,8 @@ const ClientsHeroSection = () => {
               className="text-[7vw] md:text-[3.5vw] font-bold font-sans leading-tight md:leading-none text-center md:text-left"
               variants={textVariants}
             >
-              Our Clients <br className="hidden md:block" /> Building Success <br className="hidden md:block" /> Together
+              Our Clients <br className="hidden md:block" /> Building Success{" "}
+              <br className="hidden md:block" /> Together
             </motion.h1>
           </div>
 
@@ -51,8 +52,10 @@ const ClientsHeroSection = () => {
               variants={textVariants}
               transition={{ delay: 0.2 }}
             >
-              At Code4Bharat, we value our clients and strive to provide exceptional IT solutions. <br />
-              Our commitment is to empower businesses and foster growth in the digital landscape.
+              At Code4Bharat, we value our clients and strive to provide
+              exceptional IT solutions. <br />
+              Our commitment is to empower businesses and foster growth in the
+              digital landscape.
             </motion.p>
           </div>
 
@@ -61,12 +64,14 @@ const ClientsHeroSection = () => {
             variants={textVariants}
             transition={{ delay: 0.4 }}
           >
-            <motion.button
-              whileHover={{ scale: 1.03 }} // Slight hover effect
-              className="px-6 py-3 text-[4vw] md:text-[1vw] font-medium bg-white text-black rounded-md"
-            >
-              Learn More About Our Clients
-            </motion.button>
+            {/* <Link href="/aboutus">
+              <motion.button
+                whileHover={{ scale: 1.03 }} // Slight hover effect
+                className="px-6 py-3 text-[4vw] md:text-[1vw] font-medium bg-white text-black rounded-md"
+              >
+                Learn More About Our Clients
+              </motion.button>
+            </Link> */}
           </motion.div>
         </motion.div>
 

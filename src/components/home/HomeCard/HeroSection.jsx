@@ -2,17 +2,25 @@
 import React from "react";
 import { motion } from "framer-motion"; // Importing Framer Motion
 import Image from "next/image"; // Using Next.js Image component for optimization
+import Link from "next/link";
 
 const HeroSection = () => {
   // Minimal animation variants
   const minimalVariants = {
     hidden: { opacity: 0, y: 30 }, // Start slightly below with low opacity
-    visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.5, ease: "easeOut" },
+    },
   };
 
   const imageVariants = {
     hidden: { opacity: 0 },
-    visible: { opacity: 1, transition: { duration: 0.7, ease: "easeOut", delay: 0.3 } },
+    visible: {
+      opacity: 1,
+      transition: { duration: 0.7, ease: "easeOut", delay: 0.3 },
+    },
   };
 
   return (
@@ -28,7 +36,8 @@ const HeroSection = () => {
             variants={minimalVariants}
           >
             <h1 className="text-[7vw] md:text-[3.5vw] font-bold font-sans leading-tight md:leading-none text-center md:text-left">
-              Boost Your <br className="hidden md:block" /> Business with <br className="hidden md:block" /> Cutting-Edge IT Solutions
+              Boost Your <br className="hidden md:block" /> Business with{" "}
+              <br className="hidden md:block" /> Cutting-Edge IT Solutions
             </h1>
           </motion.div>
 
@@ -56,12 +65,14 @@ const HeroSection = () => {
             variants={minimalVariants}
             transition={{ delay: 0.4 }}
           >
-            <motion.button
-              whileHover={{ scale: 1.03 }} // Slight hover effect
-              className="px-6 py-3 text-[4vw] md:text-[1vw] font-medium bg-white text-black rounded-md"
-            >
-              Get Started Today!
-            </motion.button>
+            <Link href="/contactus">
+              <motion.button
+                whileHover={{ scale: 1.03 }} // Slight hover effect
+                className="px-6 py-3 text-[4vw] md:text-[1vw] font-medium bg-white text-black rounded-md"
+              >
+                Get Started Today!
+              </motion.button>
+            </Link>
           </motion.div>
         </div>
 

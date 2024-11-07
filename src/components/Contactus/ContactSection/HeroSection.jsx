@@ -61,14 +61,14 @@ const ContactUsHeroSection = () => {
               we are just a message away.
             </p>
           </motion.div>
-          <motion.div
+          {/* <motion.div
             className="w-full text-center md:text-left"
             variants={textVariants}
           >
             <button className="px-6 py-3 text-[4vw] md:text-[1vw] font-medium bg-white text-black rounded-md">
               Get in Touch
             </button>
-          </motion.div>
+          </motion.div> */}
         </motion.div>
 
         {/* Right Section (Image) */}

@@ -2,7 +2,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import { motion } from "framer-motion";
 import ServiceCard from "./ServicesCard/Card";
-
+import Link from "next/link";
 // Define Animation Variants
 const textVariants = {
   hidden: { opacity: 0, y: 20 },  // Initially, the text is hidden and slightly shifted downwards
@@ -83,12 +83,14 @@ const ServiceSection = () => {
             animate={isInView ? "visible" : "hidden"}
             variants={buttonVariants}  // Apply buttonVariants here
           >
+            <Link href="https://wa.me/919594402916?text=Hello%20Code4Bharat,%20I%20need%20your%20help">
             <motion.button
               whileHover="hover"
               className="px-8 py-3 text-[4vw] md:text-[1vw] font-medium bg-[#106EB5] text-white rounded-md"
             >
               Let's Talk
             </motion.button>
+            </Link>
           </motion.div>
         </div>
 
