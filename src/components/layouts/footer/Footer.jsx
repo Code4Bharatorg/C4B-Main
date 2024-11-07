@@ -53,16 +53,18 @@ const Footer = () => {
           <h1 className="text-[5vw] md:text-[1vw] font-bold">Legal</h1>
           <div className="mt-2 space-y-2">
             {[
-              { name: "Terms & Conditions" },
-              { name: "Privacy & Security" },
-              { name: "Contact" },
+              { name: "Terms & Conditions", path: "/termsandcondition" },
+              { name: "Privacy & Security", path: "/privacyandsecurity" },
+              { name: "Contact", path: "/contactus" },
             ].map((item, index) => (
-              <div
-                key={index}
-                className="text-[4vw] md:text-[1vw] hover:text-[#1976D2] cursor-pointer transition-colors duration-300"
-              >
-                {item.name}
-              </div>
+              <Link key={index} href={item.path}>
+                <motion.h5
+                  className="text-[4vw] md:text-[1vw] hover:text-[#1976D2] cursor-pointer transition-colors duration-300"
+                  whileHover={{ scale: 1.05 }}
+                >
+                  {item.name}
+                </motion.h5>
+              </Link>
             ))}
           </div>
         </div>

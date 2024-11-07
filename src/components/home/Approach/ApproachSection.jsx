@@ -95,7 +95,7 @@ const ApproachSection = () => {
             transition={{ duration: 0.6, ease: "easeInOut" }}
           >
             <Image
-              src="/images/approach.png"
+              src="/images/approach.jfif"
               alt="Approach"
               width={800}
               height={400}
@@ -147,7 +147,7 @@ const ApproachSection = () => {
       >
         <div className="w-full h-[50vh] lg:h-1/2">
           <Image
-            src="/images/approach.png"
+            src="/images/approach.jfif"
             alt="Approach"
             width={800}
             height={400}

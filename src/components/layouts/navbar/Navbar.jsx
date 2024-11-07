@@ -67,7 +67,7 @@ const Navbar = () => {
       >
         <Link href="/" onClick={handleLinkClick}>
           <Image
-            src="/images/logo.png"
+            src="/images/logo_trans.png"
             alt="Logo"
             width={150}
             height={150}

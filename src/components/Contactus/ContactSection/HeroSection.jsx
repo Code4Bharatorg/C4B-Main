@@ -77,7 +77,7 @@ const ContactUsHeroSection = () => {
           variants={imageVariants}
         >
           <Image
-            src="/images/services.png"
+            src="/images/services3.jfif"
             alt="Contact Us Banner"
             width={400}
             height={400}

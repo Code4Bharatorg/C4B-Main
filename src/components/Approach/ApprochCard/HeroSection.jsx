@@ -72,7 +72,7 @@ const ApproachHeroSection = () => {
           variants={imageVariants}
         >
           <Image
-            src="/images/rb_13013.png"
+            src="/images/approach.jfif"
             alt="Approach Banner"
             width={400}
             height={400}
