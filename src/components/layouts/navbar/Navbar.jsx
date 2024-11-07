@@ -59,7 +59,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="w-full h-[10%] flex justify-between items-center px-5 md:px-[6em] border-b-2 border-[#112D4E] relative">
+    <nav className="w-full h-[10%] flex justify-between items-center px-5 md:px-[6em] shadow-md relative">
       {/* LOGO Section */}
       <motion.div
         className="w-full md:w-[15vw] h-[10vw] flex justify-between items-center"

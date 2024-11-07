@@ -12,9 +12,12 @@ import { motion } from "framer-motion";
 
 const Footer = () => {
   return (
-    <div className="w-full h-auto pt-5 bg-[#f9f9f9]">
+    <div
+      className="w-full h-auto pt-5 bg-[#f9f9f9]"
+      style={{ boxShadow: "0 -4px 6px -1px rgba(0, 0, 0, 0.1)" }} // Added shadow above footer
+    >
       {/* Main Content Section */}
-      <div className="w-full h-auto border-t-2 border-[#112D4E] flex flex-wrap justify-between px-5 md:px-24 py-10">
+      <div className="w-full h-auto flex flex-wrap justify-between px-5 md:px-24 py-10">
         {/* Logo Section */}
         <div className="w-full md:w-[30%] lg:w-[25%] h-auto flex flex-col items-start mb-8 md:mb-0">
           <div className="w-[60%] md:w-[15vw] h-auto mb-5">
@@ -96,10 +99,15 @@ const Footer = () => {
                 code4bharat@gmail.com
               </a>
             </div>
-            <div className="text-[4vw] md:text-[1vw]">
-              <span className="font-medium">Office:</span>
-               Off BKC, Mumbai, India 400070.
-            </div>
+            <a
+              href="https://maps.app.goo.gl/DzBt4BdL9BH4MRga9"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[4vw] md:text-[1vw] hover:text-[#1976D2] cursor-pointer transition-colors duration-300"
+            >
+              <span className="font-medium">Office:</span> Off BKC, Mumbai,
+              India 400070.
+            </a>
           </div>
         </div>
       </div>
@@ -151,7 +159,6 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* WhatsApp Icon - Fixed */}
       {/* WhatsApp Icon - Fixed */}
       <a
         href="https://wa.me/919594402916?text=Hello%20Code4Bharat,%20I%20need%20your%20help"
