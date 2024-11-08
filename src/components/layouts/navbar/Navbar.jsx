@@ -48,14 +48,13 @@ const Navbar = () => {
     },
   };
 
-  // Menu items including "Home" and "Verify Certificate"
+  // Menu items including "Home"
   const menuItems = [
-    { name: "Home", path: "/" },
+    { name: "Home", path: "/" }, // New Home link
     { name: "About Us", path: convertToPath("About Us") },
     { name: "Services", path: convertToPath("Services") },
     { name: "Clients", path: convertToPath("Clients") },
     { name: "Approach", path: convertToPath("Approach") },
-    { name: "Verify Certificate", path: "/verify" }, // New "Verify Certificate" link
     { name: "Contact Us", path: convertToPath("Contact Us") },
   ];
 
@@ -150,7 +149,7 @@ const Navbar = () => {
         animate="visible"
         variants={navVariants}
       >
-        <Link href={menuItems[6].path} onClick={handleLinkClick}>
+        <Link href={menuItems[5].path} onClick={handleLinkClick}>
           <motion.button
             className="btn text-[1vw] font-medium border-[2.5px] border-[#112D4E] px-10 py-2 rounded-md transition-all duration-300 ease-in-out"
             whileHover={{
