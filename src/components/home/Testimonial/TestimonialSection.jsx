@@ -70,7 +70,7 @@ const TestimonialsSection = () => {
           stars={4}
         />
         <TestimonialCard
-          image="/images/faces/shamsshaikh.jfif"
+          image="/images/faces/shamsshaikh.jpg"
           description="Great results and amazing ongoing support! Code4Bharat’s team has been fantastic every step of the way."
           name="Shams Shaikh"
           username="shamsshaikh"

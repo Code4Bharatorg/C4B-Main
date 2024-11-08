@@ -81,7 +81,7 @@ const ClientsHeroSection = () => {
           variants={imageVariants}
         >
           <Image
-            src="/images/services3.jfif"
+            src="/images/services3.jpg"
             alt="Clients Banner"
             width={400}
             height={400}

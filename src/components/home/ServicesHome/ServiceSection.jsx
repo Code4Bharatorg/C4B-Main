@@ -98,13 +98,13 @@ const ServiceSection = () => {
         <div className="rightside w-full md:w-1/2 flex flex-wrap justify-center items-center gap-5 p-5 ">
           <ServiceCard
             image="/images/servicesimg/webdev.png"
-            imageHover="/images/services img/webwhite.png"
+            imageHover="/images/services"
             title="Web Development"
             description="At Code4Bharat, we deliver tailored web development services, including custom websites, e-commerce platforms, and web applications."
           />
           <ServiceCard
             image="/images/servicesimg/mobile.png"
-            imageHover="/images/services img/mobilewhite.png"
+            imageHover="/images/services"
             title="Mobile Development"
             description="We provide custom mobile app development services that bring your vision to life across iOS and Android platforms."
           />

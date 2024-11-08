@@ -208,7 +208,7 @@ const ValueCard = ({ value }) => {
 
 const ValuesSection = () => {
   return (
-    <section className="w-full h-auto md:h-[70%] bg-[#DBE2EF] p-5 md:p-10 bg-cover bg-center">
+    <section className="w-full h-auto md:h-[90%] bg-[#DBE2EF] p-5 md:p-10 bg-cover bg-center">
       {/* Header Section */}
       <motion.div
         className="w-full h-auto md:h-[20%] flex items-center justify-center flex-col gap-5 mb-5 md:mb-0"
